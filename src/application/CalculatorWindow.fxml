@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#show_backspace" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Calculator">
+   <children>
+      <Button fx:id="B_2" layoutX="87.0" layoutY="359.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_2" prefHeight="60.0" prefWidth="60.0" text="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_3" layoutX="147.0" layoutY="359.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_3" prefHeight="60.0" prefWidth="60.0" text="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_4" layoutX="27.0" layoutY="299.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_4" prefHeight="60.0" prefWidth="60.0" text="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_5" layoutX="87.0" layoutY="299.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_5" prefHeight="60.0" prefWidth="60.0" text="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_6" layoutX="147.0" layoutY="299.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_6" prefHeight="60.0" prefWidth="60.0" text="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_7" layoutX="27.0" layoutY="239.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_7" prefHeight="60.0" prefWidth="60.0" text="7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_8" layoutX="87.0" layoutY="239.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_8" prefHeight="60.0" prefWidth="60.0" text="8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_9" layoutX="147.0" layoutY="239.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_9" prefHeight="60.0" prefWidth="60.0" text="9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_1" layoutX="27.0" layoutY="359.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_1" prefHeight="60.0" prefWidth="60.0" text="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_leftBrac" layoutX="87.0" layoutY="419.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_lbrac" prefHeight="60.0" prefWidth="60.0" text="(">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_0" layoutX="27.0" layoutY="419.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_0" prefHeight="60.0" prefWidth="60.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="147.0" layoutY="179.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_backspace" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="&lt;-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_rightBrac" layoutX="147.0" layoutY="419.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_rbrac" prefHeight="60.0" prefWidth="60.0" text=")">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="27.0" layoutY="179.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clear" prefHeight="60.0" prefWidth="119.0" style="-fx-background-color: red;" text="AC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_div" layoutX="207.0" layoutY="179.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_div" prefHeight="60.0" prefWidth="60.0" text="/">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_mul" layoutX="207.0" layoutY="239.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_Multiply" prefHeight="60.0" prefWidth="60.0" text="*">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_sub" layoutX="207.0" layoutY="299.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_subtract" prefHeight="60.0" prefWidth="60.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_add" layoutX="207.0" layoutY="359.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_add" prefHeight="60.0" prefWidth="60.0" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_equal" layoutX="207.0" layoutY="419.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_result" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: blue;" text="=">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="display_bar" editable="false" layoutX="30.0" layoutY="48.0" prefHeight="81.0" prefWidth="234.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="9.0" layoutY="6.0" mnemonicParsing="false" onAction="#go_back" text="&lt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

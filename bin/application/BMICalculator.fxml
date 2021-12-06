@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BMICalculator">
+   <children>
+   <Button layoutX="217.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clear" prefHeight="119.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="AC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="217.0" layoutY="368.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_backspace" prefHeight="119.0" prefWidth="60.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_0" layoutX="97.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_0" prefHeight="60.0" prefWidth="60.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_1" layoutX="37.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_1" prefHeight="60.0" prefWidth="60.0" text="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_5" layoutX="97.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_5" prefHeight="60.0" prefWidth="60.0" text="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_3" layoutX="157.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_3" prefHeight="60.0" prefWidth="60.0" text="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_6" layoutX="157.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_6" prefHeight="60.0" prefWidth="60.0" text="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_8" layoutX="97.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_8" prefHeight="60.0" prefWidth="60.0" text="8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_7" layoutX="37.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_7" prefHeight="60.0" prefWidth="60.0" text="7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_4" layoutX="37.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_4" prefHeight="60.0" prefWidth="60.0" text="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_2" layoutX="97.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_2" prefHeight="60.0" prefWidth="60.0" text="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_9" layoutX="157.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_9" prefHeight="60.0" prefWidth="60.0" text="9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_dot" layoutX="157.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_dot" prefHeight="60.0" prefWidth="60.0" text=".">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#done" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: green;" text="OK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="229.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../backspace.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="198.0" mnemonicParsing="false" onAction="#reset" prefHeight="0.0" prefWidth="240.0" style="-fx-background-color: red;" text="RESET">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="169.0" layoutY="1.0" prefHeight="17.0" prefWidth="61.0" text="BMI">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="51.0" prefHeight="27.0" prefWidth="115.0" text="Weight (kg)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="93.0" prefHeight="27.0" prefWidth="99.0" text="Height (cm)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="weight_bar" editable="false" layoutX="299.0" layoutY="48.0" prefHeight="25.0" prefWidth="61.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="height_bar" editable="false" layoutX="299.0" layoutY="92.0" prefHeight="25.0" prefWidth="61.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="BMI_bar" editable="false" layoutX="121.0" layoutY="134.0" prefHeight="42.0" prefWidth="149.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#go_back" text="&lt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

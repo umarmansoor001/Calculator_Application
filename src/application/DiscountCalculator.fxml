@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DiscountCalculator">
+   <children>
+      <Button layoutX="217.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clear" prefHeight="119.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="AC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="217.0" layoutY="368.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_backspace" prefHeight="119.0" prefWidth="60.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_0" layoutX="97.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_0" prefHeight="60.0" prefWidth="60.0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_1" layoutX="37.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_1" prefHeight="60.0" prefWidth="60.0" text="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_5" layoutX="97.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_5" prefHeight="60.0" prefWidth="60.0" text="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_3" layoutX="157.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_3" prefHeight="60.0" prefWidth="60.0" text="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_6" layoutX="157.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_6" prefHeight="60.0" prefWidth="60.0" text="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_8" layoutX="97.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_8" prefHeight="60.0" prefWidth="60.0" text="8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_7" layoutX="37.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_7" prefHeight="60.0" prefWidth="60.0" text="7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_4" layoutX="37.0" layoutY="309.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_4" prefHeight="60.0" prefWidth="60.0" text="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_2" layoutX="97.0" layoutY="369.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_2" prefHeight="60.0" prefWidth="60.0" text="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_9" layoutX="157.0" layoutY="249.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_9" prefHeight="60.0" prefWidth="60.0" text="9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="B_dot" layoutX="157.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#show_dot" prefHeight="60.0" prefWidth="60.0" text=".">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#done" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: green;" text="OK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="229.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../backspace.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="50.0" text="Original Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="89.0" prefHeight="27.0" prefWidth="144.0" text="Discount (% Off)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="126.0" prefHeight="27.0" prefWidth="125.0" text="Final Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="2.0" prefHeight="35.0" prefWidth="108.0" text="Discount">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price_bar" editable="false" layoutX="277.0" layoutY="50.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="discount_bar" editable="false" layoutX="277.0" layoutY="89.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="finalprice_bar" editable="false" layoutX="277.0" layoutY="127.0" prefHeight="25.0" prefWidth="83.0" />
+      <Label fx:id="saving_bar" layoutX="110.0" layoutY="161.0" prefHeight="17.0" prefWidth="155.0" />
+      <Button layoutX="37.0" layoutY="198.0" mnemonicParsing="false" onAction="#reset" prefHeight="0.0" prefWidth="240.0" style="-fx-background-color: red;" text="Reset">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="8.0" mnemonicParsing="false" onAction="#go_back" text="&lt;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
